@@ -1,0 +1,22 @@
+body{
+    /*
+    MODO COMUM
+
+    background-image: url(/PROJETO/ASSETS/Background.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    */
+
+    /*MODO AGRUPADO OU ATALHO*/
+
+    background: url(/PROJETO/ASSETS/Background.jpg) no-repeat top center/cover ;
+
+}
+
+#container {
+    width: 360px;
+    height: 712px;
+    border: 1px solid red;
+
+}
