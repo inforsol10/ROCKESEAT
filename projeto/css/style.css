@@ -6,10 +6,10 @@
 }
 
 body{
-    /*
-    MODO COMUM
+    
+    /*MODO COMUM
 
-    background-image: url(/PROJETO/ASSETS/Background.jpg);
+    background-image: url(ASSETS/Background.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -17,13 +17,13 @@ body{
 
     /*MODO AGRUPADO OU ATALHO*/
 
-    background: url(/PROJETO/ASSETS/Background.jpg) no-repeat top center/cover ;
+    background: url(assets/Background.jpg) no-repeat top center/cover;
 
 }
 
 body * {
     font-family: 'Inter', sans-serif;
-    color: #ffffff;
+    color: #000000;
 }
 
 #container {
