@@ -1,3 +1,10 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     /*
     MODO COMUM
@@ -14,9 +21,53 @@ body{
 
 }
 
+body * {
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+}
+
 #container {
     width: 360px;
-    height: 712px;
-    border: 1px solid red;
+    margin: auto;
+}
 
+#profile {
+    text-align: center;
+    padding: 24px;
+}
+
+#profile img {
+    width: 112px;    
+}
+
+#profile p {
+    font-weight: 500;
+    line-height: 24px;
+}
+
+ul {
+    list-style: none;
+    display: flex; /*DEIXAR TODO O ALINHAMENTO DOS ITENS FLEXIVEL*/
+    flex-direction: column; /* DEIXAR TUDO EM UL ALINHADO EM COLUNA*/
+    gap: 8px; /*DEIXAR AS LINHAS QUE ESTÃO EM UL COM ESPAÇAMENTO DE 8PX, UMA DA OUTRA*/
+}
+
+ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    display: flex; 
+    justify-content: center; /*ALINHAR NA HORIZONTAL*/
+    align-items: center; /*ALINHAR NA VERTICAL*/
+    padding: 16px 24px; /* -> 16PX TOP E BOTTON -> 24PX DIREITA E ESQUERDA*/
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(4px); /*-WEBKIT- = PARA TORNAR COMPATIVEL COM TODOS OS NAVEGADORES 
+    -> BACKDROP-FILTER = EFEITO A SER APLICADO NO BACKGROUND DO BOTÃO -> BLUR = EFEITO DE EMBAÇAR*/
+    transition: background 0.5s;
+}
+
+ul li a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid #ffffff;
 }
