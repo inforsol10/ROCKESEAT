@@ -17,7 +17,7 @@ body{
 
     /*MODO AGRUPADO OU ATALHO*/
 
-    background: url(rockeseat/projeto/assets/Background.jpg) no-repeat top center;
+    background: url(/projeto/assets/Background.jpg) no-repeat top center/cover;
 
 }
 
