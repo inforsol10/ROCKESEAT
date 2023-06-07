@@ -1,4 +1,6 @@
 
+@charset "utf-8";
+
 * {
     margin: 0;
     padding: 0;
@@ -17,13 +19,13 @@ body{
 
     /*MODO AGRUPADO OU ATALHO*/
 
-    background: url(https://github.com/inforsol10/rockeseat/projeto/assets/Background.jpg) no-repeat top center/cover;
+    background: url(../assets/Background.jpg) no-repeat top center/cover;
 
 }
 
 body * {
     font-family: 'Inter', sans-serif;
-    color: #000000;
+    color: #fff;
 }
 
 #container {
@@ -55,19 +57,21 @@ ul {
 ul li a {
     text-decoration: none;
     font-weight: 500;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid;
+    border-color: rgba(255, 255, 255, 0.5);
     border-radius: 8px;
     display: flex; 
     justify-content: center; /*ALINHAR NA HORIZONTAL*/
     align-items: center; /*ALINHAR NA VERTICAL*/
     padding: 16px 24px; /* -> 16PX TOP E BOTTON -> 24PX DIREITA E ESQUERDA*/
-    background: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(4px); /* -WEBKIT- = PARA TORNAR COMPATIVEL COM TODOS OS NAVEGADORES 
     -> BACKDROP-FILTER = EFEITO A SER APLICADO NO BACKGROUND DO BOTÃO -> BLUR = EFEITO DE EMBAÇAR*/
     transition: background 0.5s;
 }
 
 ul li a:hover {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1.5px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid; 
+    border-color: #ffffff;
 }
