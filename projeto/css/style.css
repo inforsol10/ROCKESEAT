@@ -31,6 +31,7 @@ body * {
 #container {
     width: 360px;
     margin: auto;
+    padding: 0 24px;
 }
 
 #profile {
@@ -52,6 +53,7 @@ ul {
     display: flex; /*DEIXAR TODO O ALINHAMENTO DOS ITENS FLEXIVEL*/
     flex-direction: column; /* DEIXAR TUDO EM UL ALINHADO EM COLUNA*/
     gap: 8px; /*DEIXAR AS LINHAS QUE ESTÃO EM UL COM ESPAÇAMENTO DE 8PX, UMA DA OUTRA*/
+    padding: 24px 0;
 }
 
 ul li a {
@@ -74,4 +76,12 @@ ul li a:hover {
     background-color: rgba(255, 255, 255, 0.05);
     border: 1.5px solid; 
     border-color: #ffffff;
+}
+
+#social_links{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 24px 0;
+    font-size: 24px;
 }
