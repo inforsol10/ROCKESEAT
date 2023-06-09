@@ -67,7 +67,7 @@ ul li a {
     align-items: center; /*ALINHAR NA VERTICAL*/
     padding: 16px 24px; /* -> 16PX TOP E BOTTON -> 24PX DIREITA E ESQUERDA*/
     background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(4px); /* -WEBKIT- = PARA TORNAR COMPATIVEL COM TODOS OS NAVEGADORES 
+    -webkit-backdrop-filter: blur(4px); /* -WEBKIT- = PARA TORNAR COMPATIVEL COM TODOS OS NAVEGADORES 
     -> BACKDROP-FILTER = EFEITO A SER APLICADO NO BACKGROUND DO BOTÃO -> BLUR = EFEITO DE EMBAÇAR*/
     transition: background 0.5s;
 }
