@@ -1,3 +1,4 @@
+@charset "utf-8";
 
 @charset "utf-8";
 
@@ -11,7 +12,7 @@ body{
     
     /*MODO COMUM
 
-    background-image: url(ASSETS/Background.jpg);
+    background-image: url(../assets/Background.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -25,7 +26,11 @@ body{
 
 body * {
     font-family: 'Inter', sans-serif;
+<<<<<<< HEAD
     color: #fff;
+=======
+    color: #ffffff;
+>>>>>>> origin
 }
 
 #container {
@@ -59,7 +64,11 @@ ul {
 ul li a {
     text-decoration: none;
     font-weight: 500;
+<<<<<<< HEAD
     border: 1px solid;
+=======
+    border: 1px solid; 
+>>>>>>> origin
     border-color: rgba(255, 255, 255, 0.5);
     border-radius: 8px;
     display: flex; 
@@ -67,15 +76,23 @@ ul li a {
     align-items: center; /*ALINHAR NA VERTICAL*/
     padding: 16px 24px; /* -> 16PX TOP E BOTTON -> 24PX DIREITA E ESQUERDA*/
     background-color: rgba(255, 255, 255, 0.1);
+<<<<<<< HEAD
     -webkit-backdrop-filter: blur(4px); /* -WEBKIT- = PARA TORNAR COMPATIVEL COM TODOS OS NAVEGADORES 
+=======
+    backdrop-filter: blur(4px); /* -WEBKIT- = PARA TORNAR COMPATIVEL COM TODOS OS NAVEGADORES 
+>>>>>>> origin
     -> BACKDROP-FILTER = EFEITO A SER APLICADO NO BACKGROUND DO BOTÃO -> BLUR = EFEITO DE EMBAÇAR*/
     transition: background 0.5s;
 }
 
 ul li a:hover {
     background-color: rgba(255, 255, 255, 0.05);
+<<<<<<< HEAD
     border: 1.5px solid; 
     border-color: #ffffff;
+=======
+    border: 1.5px solid #ffffff;
+>>>>>>> origin
 }
 
 #social_links{
