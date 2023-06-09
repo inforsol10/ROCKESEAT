@@ -82,7 +82,19 @@ ul li a:hover {
 #social_links{
     display: flex;
     justify-content: center;
-    gap: 32px;
+    gap: 16px;
     padding: 24px 0;
-    font-size: 24px;
+    font-size: 30px;   
+}
+
+#social_links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#social_links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 16px;
+    border-radius: 50%;
 }
