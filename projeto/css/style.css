@@ -8,6 +8,30 @@
     box-sizing: border-box;
 }
 
+:root{
+    --text-color: #ffffff;
+    --border-color: rgba(255, 255, 255, 0.5);
+    --background-img: url(../assets/Background.jpg);
+    --background-collor:  rgba(255, 255, 255, 0.1);
+    --backdrop-filter: blur(4px);
+    --ulliahover-background: rgba(255, 255, 255, 0.05);
+    --backgrd-socialLinks-a: rgba(255, 255, 255, 0.2);
+    --switch-url-bg: url(../assets/handle-dark.svg);
+    --button-position: right: 0;
+}
+
+.light{
+    --text-color: #000000;
+    --border-color: rgba(0, 0, 0, 0.5);
+    --background-img: url(../assets/Background_light.jpg);
+    --background-collor: rgba(0, 0, 0, 0.05);
+    --backdrop-filter: blur(4px);
+    --ulliahover-background: ;
+    --backgrd-socialLinks-a: rgba(0, 0, 0, 0.1);
+    --switch-url-bg: url(../assets/handle.svg);
+    --button-position: left: 0;
+}
+
 body{
     
     /*MODO COMUM
@@ -20,13 +44,13 @@ body{
 
     /*MODO AGRUPADO OU ATALHO*/
 
-    background: url(../assets/Background.jpg) no-repeat top center/cover;
+    background: var(--background-img) no-repeat top center/cover;
 
 }
 
 body * {
     font-family: 'Inter', sans-serif;
-    color: #ffffff;
+    color: var(--text-color);
 }
 
 #container {
@@ -49,6 +73,39 @@ body * {
     line-height: 24px;
 }
 
+#switch {
+    position: relative;
+    width: 64px;
+    margin: 0 auto;
+}
+
+#switch button {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    background: #ffffff var(--switch-url-bg) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+    transform: translateY(-10%)
+}
+
+.light #switch button {
+    right: 0;
+    left: initial;
+}
+
+#switch span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: var(--background-collor);
+    border: 1px solid var(--border-color);
+    border-radius: 9999px;
+    -webkit-backdrop-filter: var(--backdrop-filter);
+}
+
 ul {
     list-style: none;
     display: flex; /*DEIXAR TODO O ALINHAMENTO DOS ITENS FLEXIVEL*/
@@ -61,28 +118,28 @@ ul li a {
     text-decoration: none;
     font-weight: 500;
     border: 1px solid; 
-    border-color: rgba(255, 255, 255, 0.5);
+    border-color: var(--border-color);
     border-radius: 8px;
     display: flex; 
     justify-content: center; /*ALINHAR NA HORIZONTAL*/
     align-items: center; /*ALINHAR NA VERTICAL*/
     padding: 16px 24px; /* -> 16PX TOP E BOTTON -> 24PX DIREITA E ESQUERDA*/
-    background-color: rgba(255, 255, 255, 0.1);
-    -webkit-backdrop-filter: blur(4px); /* -WEBKIT- = PARA TORNAR COMPATIVEL COM TODOS OS NAVEGADORES 
+    background-color: var(--background-collor);
+    -webkit-backdrop-filter: var(--backdrop-filter); /* -WEBKIT- = PARA TORNAR COMPATIVEL COM TODOS OS NAVEGADORES 
     -> BACKDROP-FILTER = EFEITO A SER APLICADO NO BACKGROUND DO BOTÃO -> BLUR = EFEITO DE EMBAÇAR*/
     transition: background 0.5s;
 }
 
 ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: var(--ulliahover-background);
     border: 1.5px solid; 
-    border-color: #ffffff;
+    border-color: var(--text-color);
 }
 
 #social_links{
     display: flex;
     justify-content: center;
-    gap: 16px;
+    
     padding: 24px 0;
     font-size: 30px;   
 }
@@ -91,11 +148,12 @@ ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 16px;
 }
 
 #social_links a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 10px;
+    background: var(--backgrd-socialLinks-a);
+    
     border-radius: 50%;
 }
 
@@ -111,5 +169,5 @@ footer a {
 
 footer a:hover{
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--border-color);
 }
