@@ -95,6 +95,21 @@ ul li a:hover {
 
 #social_links a:hover {
     background: rgba(255, 255, 255, 0.2);
-    padding: 16px;
+    padding: 10px;
     border-radius: 50%;
+}
+
+footer {
+    font-size: 14px;
+    text-align: center;
+    padding: 24px 0;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
 }
