@@ -45,6 +45,7 @@ body{
     /*MODO AGRUPADO OU ATALHO*/
 
     background: var(--background-img) no-repeat top center/cover;
+    height: 100vh;
 
 }
 
@@ -171,4 +172,14 @@ footer a {
 footer a:hover{
     text-decoration: none;
     color: var(--border-color);
+}
+
+@media(min-width: 700px){
+    :root {
+        --background-img: url(../assets/bg-desktop.jpg);
+    }
+
+    .light {
+        --background-img: url(../assets/bg-desktop-light.jpg);
+    }
 }
