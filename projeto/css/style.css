@@ -85,17 +85,25 @@ body * {
     position: absolute;
     z-index: 1;
     left: 0;
+    top: 50%; /* PROPRIEDADE USADA PARA ALINHAR O BOTAO NO CENTRO DO TRACKER*/
     width: 32px;
     height: 32px;
     background: #ffffff var(--switch-url-bg) no-repeat center;
     border: 0;
     border-radius: 50%;
-    transform: translateY(-10%)
+    transform: translateY(-50%); /* PROPRIEDADE USADA PARA ALINHAR O BOTAO NO CENTRO DO TRACKER*/
+    animation: slide-out 0.4s;
 }
 
 .light #switch button {
-    right: 0;
-    left: initial;
+   /* ESTAVA ASSIM ANTES DA ANIMACAO */
+    /* right: 0;
+    left: initial; */
+    animation: slide-in 0.4s forwards; /* PARAMETRO USADO PARA ANIMACAO @keyframes */
+}
+
+#switch button:hover{
+    outline: 7px solid var(--backgrd-socialLinks-a);
 }
 
 #switch span {
@@ -174,6 +182,8 @@ footer a:hover{
     color: var(--border-color);
 }
 
+/* MEDIA QUERIES */
+
 @media(min-width: 700px){
     :root {
         --background-img: url(../assets/bg-desktop.jpg);
@@ -181,5 +191,27 @@ footer a:hover{
 
     .light {
         --background-img: url(../assets/bg-desktop-light.jpg);
+    }
+}
+
+/* ANIMATION */
+
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+    
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-out {
+    from {
+        left: 50%;
+    }
+
+    to {
+        left: 0;
     }
 }
