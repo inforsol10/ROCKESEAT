@@ -186,11 +186,11 @@ footer a:hover{
 
 @media(min-width: 700px){
     :root {
-        --background-img: url(../assets/bg-desktop.jpg);
+        --background-img: url(../assets/meuBgDesktopDark.png);
     }
 
     .light {
-        --background-img: url(../assets/bg-desktop-light.jpg);
+        --background-img: url(../assets/meuBgDesktopLight.png);
     }
 }
 
