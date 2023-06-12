@@ -26,7 +26,7 @@
     --background-img: url(../assets/meuBgMobileLight.png);
     --background-collor: rgba(0, 0, 0, 0.05);
     --backdrop-filter: blur(4px);
-    --ulliahover-background: ;
+    --body-background: url(../assets/meuBgDesktopLight.png);
     --backgrd-socialLinks-a: rgba(0, 0, 0, 0.1);
     --switch-url-bg: url(../assets/handle.svg);
     --button-position: left: 0;
@@ -43,9 +43,7 @@ body{
     */
 
     /*MODO AGRUPADO OU ATALHO*/
-
-    background: var(--background-img) no-repeat top center/cover;
-    height: 100vh;
+    background: var(--body-background);
 
 }
 
@@ -56,9 +54,11 @@ body * {
 
 #container {
     width: 100%;
-    max-width: 588px;
+    max-width: 500px;
     margin: auto;
-    padding: 0 24px;
+    padding: 0 44px;
+    background: var(--background-img) no-repeat top center/cover;
+    height: 100vh;
 }
 
 #profile {
@@ -186,12 +186,28 @@ footer a:hover{
 
 @media(min-width: 700px){
     :root {
-        --background-img: url(../assets/meuBgDesktopDark.png);
-    }
+        #container{
+        background: url(../assets/meuBgDesktopDark.png); 
+        border-top-right-radius: 10%;
+        height: 105vh;
+        }
+
+        --body-background: #5e5e61;
+
+        }
+   
 
     .light {
-        --background-img: url(../assets/meuBgDesktopLight.png);
+        #container {
+        background: url(../assets/meuBgDesktopLight.png);
+        border-top-right-radius: 10%;
+        height: 105vh;
+        }
+        
+        --body-background: url(../assets/meuBgDesktopLight.png);
+        
     }
+
 }
 
 /* ANIMATION */
