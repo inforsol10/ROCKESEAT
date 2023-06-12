@@ -192,7 +192,7 @@ footer a:hover{
         height: 105vh;
         }
 
-        --body-background: #5e5e61;
+        --body-background: url(../assets/bg-desktop.jpg);
 
         }
    
