@@ -26,7 +26,7 @@
     --background-img: url(../assets/meuBgMobileLight.png);
     --background-collor: rgba(0, 0, 0, 0.05);
     --backdrop-filter: blur(4px);
-    --body-background: url(../assets/meuBgDesktopLight.png) no-repeat center;
+    --body-background: url(../assets/meuBgDesktopLight.png) no-repeat;
     --backgrd-socialLinks-a: rgba(0, 0, 0, 0.1);
     --switch-url-bg: url(../assets/handle.svg);
     --button-position: left: 0;
@@ -44,6 +44,7 @@ body{
 
     /*MODO AGRUPADO OU ATALHO*/
     background: var(--body-background);
+    background-size: cover;
 
 }
 
