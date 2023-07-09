@@ -45,7 +45,7 @@ body{
     /*MODO AGRUPADO OU ATALHO*/
     background: var(--body-background);
     background-size: cover;
-
+    height: 100vh;
 }
 
 body * {
